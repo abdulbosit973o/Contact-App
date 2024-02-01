@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/firstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:minWidth="2dp"
+        android:hint="First Name"
+        android:fontFamily="@font/uzum"
+        android:textColor="@color/white"
+        android:textColorHint="#433A3A" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/lastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:minWidth="2dp"
+        android:fontFamily="@font/uzum"
+        android:hint="Last Name"
+        android:textColor="@color/white"
+        android:textColorHint="#433A3A" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:fontFamily="@font/uzum"
+        android:maxLength="13"
+        android:minLines="1"
+        android:textColor="@color/white"
+        android:textColorHint="#433A3A" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nunito_extrabold"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_button"
+        android:text="Save Contact"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

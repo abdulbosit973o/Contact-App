@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="exam_background">#221E2B</color>
+    <color name="exam_button">#008EFF</color>
+    <color name="exam_contact_back">#191620</color>
+    <color name="color_app_buttons">#45f</color>
+    <color name="color_app_main">#0d2b5c</color>
+    <color name="paid">#98FF9C</color>
+    <color name="un_paid">#FFE090</color>
+    <color name="not_paid">#FFBDA9</color>
+    <color name="card_back">#E4EBF3</color>
+    <color name="item_back">#337A7B7D</color>
+</resources>

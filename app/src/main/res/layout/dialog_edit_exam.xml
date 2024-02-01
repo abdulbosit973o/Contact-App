@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/exam_contact_back"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:background="@color/exam_button">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Contact"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="20dp"
+                android:layout_gravity="start"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:src="@drawable/cowboy" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:src="@drawable/university" />
+
+            <ImageView
+                android:padding="20dp"
+                android:id="@+id/image3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="end"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:src="@drawable/user" />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:minWidth="2dp"
+            android:hint="Name"
+            android:textColor="@color/white"
+            android:textColorHint="#433A3A" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:maxLength="13"
+            android:minLines="1"
+            android:textColor="@color/white"
+            android:textColorHint="#433A3A" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/exam_button"
+        android:text="Save Contact"
+        android:textSize="18sp" />
+
+
+
+
+</FrameLayout>

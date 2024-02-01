@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ContactByRetrofit</string>
+    <string name="placeHolder">This place has not been added to\nthe contacts yet.</string>
+</resources>

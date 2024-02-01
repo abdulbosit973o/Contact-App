@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/exam_background"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@color/exam_button"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:elevation="2dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:src="@drawable/back"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            app:tint="@color/white" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_contact"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="@color/exam_contact_back"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/history"
+        android:layout_width="200dp"
+        android:layout_height="46dp"
+        app:cardBackgroundColor="@color/exam_contact_back"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_contact" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/location"
+        android:layout_width="200dp"
+        android:layout_height="46dp"
+        app:cardBackgroundColor="@color/exam_contact_back"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_contact" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        app:layout_constraintTop_toTopOf="@+id/history"
+        app:layout_constraintBottom_toBottomOf="@+id/history"
+        app:layout_constraintStart_toStartOf="@+id/history"
+        android:textSize="22sp"
+        android:fontFamily="@font/work_sans"
+        android:textColor="@color/white"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/history" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        app:layout_constraintTop_toTopOf="@+id/location"
+        app:layout_constraintBottom_toBottomOf="@+id/location"
+        app:layout_constraintStart_toStartOf="@+id/location"
+        android:textSize="22sp"
+        android:fontFamily="@font/work_sans"
+        android:textColor="@color/white"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/location" />
+
+
+    <ImageView
+        android:id="@+id/contactImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="2dp"
+        android:src="@drawable/cowboy"
+        app:layout_constraintBottom_toTopOf="@+id/card_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_contact" />
+
+    <TextView
+        android:id="@+id/contactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abdulbosit"
+        android:elevation="2dp"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/card_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_contact" />
+
+    <TextView
+        android:id="@+id/contactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9988758478578"
+        android:elevation="2dp"
+        app:layout_constraintVertical_bias="0.1"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/card_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactName" />
+
+
+    <ImageView
+        android:id="@+id/call"
+        android:src="@drawable/call"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sms"
+        android:src="@drawable/sms"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/video"
+        app:layout_constraintStart_toEndOf="@id/call"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/video"
+        android:src="@drawable/video"
+        app:layout_constraintVertical_bias="0.9"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sms"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
